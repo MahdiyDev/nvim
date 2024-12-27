@@ -19,7 +19,6 @@ set mouse=a                 " enable mouse click
 set clipboard=unnamedplus   " using system clipboard
 filetype plugin on
 set cursorline              " highlight current cursorline
-set ttyfast                 " Speed up scrolling in Vim
 
 autocmd FileType netrw setlocal number relativenumber
 let g:netrw_liststyle = 1 " Detailed List View
@@ -33,5 +32,16 @@ let g:netrw_timefmt = "%Y-%m-%d %H:%M"
 "highlight Keyword ctermfg=Blue guifg=#0000ff
 "highlight Function ctermfg=Blue guifg=#0000ff
 highlight Label ctermfg=yellow guifg=#ffdd8a
+
+" keymap
+nnoremap <M-S-Up> yyP       " duplicates line above
+nnoremap <M-S-Down> yyp     " duplicates line below
+nnoremap <M-Up> ddkP        " move the line to up
+nnoremap <M-Down> ddp       " move the line to down
+
+nnoremap <M-S-k> yyP        " duplicates line above
+nnoremap <M-S-j> yyp        " duplicates line below
+nnoremap <M-k> ddkP         " move the line to up
+nnoremap <M-j> ddp          " move the line to down
 
 
