@@ -1,5 +1,5 @@
 set nocompatible            " disable compatibility to old-time vi
-set showmatch               " show matching 
+set showmatch                  " show matching 
 set ignorecase              " case insensitive 
 set mouse=v                 " middle-click paste with 
 set hlsearch                " highlight search 
@@ -44,4 +44,9 @@ nnoremap <M-S-j> yyp        " duplicates line below
 nnoremap <M-k> ddkP         " move the line to up
 nnoremap <M-j> ddp          " move the line to down
 
+" Normal mode: Trigger insert mode completion
+nnoremap <C-Space> i<C-X><C-I>
+
+" Insert mode: Trigger completion directly
+inoremap <C-Space> <C-X><C-I>
 
